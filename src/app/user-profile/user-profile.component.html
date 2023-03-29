@@ -1,1 +1,9 @@
 <p>user-profile works!</p>
+<div class="profile">
+    <img alt="Une image" [src]="picture" />
+    <h1>{{ title }}</h1>
+    <p> Age : {{ age }} </p>
+    <p> Citation : {{ quote }} </p>
+    <input type="text" [(ngModel)]="quote" />
+    <button (click)="resetQuote()">reset citation</button>
+</div>
